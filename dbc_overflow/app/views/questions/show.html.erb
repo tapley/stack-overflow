@@ -1,6 +1,8 @@
 <h1><%= @question.title %></h1>
 <h3><%= @question.content %></h3>
-
+<div><%= link_to "Delete", @question, method: :DELETE, data: {id: @question.id} %></div>
+<div><%= link_to "Edit", edit_question_path, method: :GET, data: {id: @question.id} %></div>
+<%= render 'answers/new_form' %>
 <% @answers.each do |answer| %>
 <h5><%= answer.title %></h5>
 <div><%= answer.content %></div>
