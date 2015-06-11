@@ -7,10 +7,15 @@ class AnswersController < ApplicationController
   def create
     @answer = Answer.new(answer_params)
     if @answer.save
-      render :show
+      # render :show
+      redirect_to @answer
     else
       render :new
     end
+  end
+
+  def show
+    @answer = Answer.find(params[:id])
   end
 
   private

@@ -1,5 +1,5 @@
 <h5> Add answer </h5>
-<%= form_for @new_answer, url: new_answer_path do |f| %>
+<%= form_for @new_answer, url: answers_path, method: :POST do |f| %>
 <%= f.label "Title" %>
 <%= f.text_field :title %>
 <%= f.label "Content" %>
