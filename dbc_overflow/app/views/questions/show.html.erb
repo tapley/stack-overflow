@@ -1,0 +1,8 @@
+<h1><%= @question.title %></h1>
+<h3><%= @question.content %></h3>
+
+<% @answers.each do |answer| %>
+<h5><%= answer.title %></h5>
+<div><%= answer.content %></div>
+<%end %>
+

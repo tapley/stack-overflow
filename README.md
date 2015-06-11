@@ -1,2 +1,2 @@
 # stack-overflow
-Stack Overflow Clone
+Stack Overflow clone to practice Ruby on Rails
